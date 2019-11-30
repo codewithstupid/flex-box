@@ -1,0 +1,19 @@
+.flexContainer {
+    display: flex;
+}
+
+.flexContainer.flexProp-row {
+    flex-direction: row;
+}
+
+.flexContainer.flexProp-rowRev {
+    flex-direction: row-reverse;
+}
+
+.flexContainer.flexProp-column {
+    flex-direction: column;
+}
+
+.flexContainer.flexProp-columnRev {
+    flex-direction: column-reverse;
+}

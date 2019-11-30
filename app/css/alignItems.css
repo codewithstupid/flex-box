@@ -1,0 +1,28 @@
+.flexContainer {
+    display: flex;
+    height: 300px;
+    flex-wrap: wrap;
+}
+.flexItem{
+    width: 200px;
+}
+
+.flexContainer.flexProp-flexStart {
+    align-items: flex-start;
+}
+
+.flexContainer.flexProp-flexEnd {
+    align-items: flex-end;
+}
+
+.flexContainer.flexProp-center {
+    align-items: center;
+}
+
+.flexContainer.flexProp-baseline {
+    align-items: baseline;
+}
+
+.flexContainer.flexProp-stretch {
+    align-items: stretch;
+}

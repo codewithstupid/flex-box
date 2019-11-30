@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flex-Box Demo</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/justify.css">
+</head>
+
+<body>
+    <div class="mainContainer">
+        <header><a href="./index.html"> CSS Flex Box</a></header>
+        <main>
+            <div class="radioContainer">
+                <input type="radio" name="flex" value="conainerProperty" checked onclick="toggleMenu()"> Container Level
+                Properties &nbsp; &nbsp;
+                <input type="radio" name="flex" value="itemProperty" onclick="toggleMenu()"> Item level Properties<br>
+            </div>
+            <ul class="menuContainer containerProperty show">
+                <li class="menuItem"><a href="./display.html">Display</a></li>
+                <li class="menuItem "><a href="./fDirection.html">Flex Direction</a></li>
+                <li class="menuItem"><a href="./fWrap.html">Flex Wrap</a></li>
+                <li class="menuItem"><a href="./fFlow.html">Flex Flow</a></li>
+                <li class="menuItem active"><a href="./justify.html">Justify Content</a></li>
+                <li class="menuItem"><a href="./alingItems.html">Align Items</a></li>
+                <li class="menuItem"><a href="./alignContent.html">Align Content</a></li>
+            </ul>
+            <ul class="menuContainer itemProperty">
+                <li class="menuItem"><a href="./order.html">Order</a></li>
+                <li class="menuItem"><a href="./fGrow.html">Flex Grow</a></li>
+                <li class="menuItem"><a href="./fShrink.html">Flex Shrink</a></li>
+                <li class="menuItem"><a href="./fBasis.html">Flex Basis</a></li>
+                <li class="menuItem"><a href="./flex.html">Flex</a></li>
+                <li class="menuItem"><a href="./alingSelf.html">Align Self</a></li>
+            </ul>
+            <div class="exampleArea">
+                <div class="valueOptions">
+                    <label for="displayValues"> Flex Justify Content Values</label>
+                    <select name="displayValues" id="displayValues" onchange="updateProp()">
+                        <option value="flexStart">Flex Start</option>
+                        <option value="flexEnd">Flex End</option>
+                        <option value="center">center</option>
+                        <option value="spaceAround">Space Around</option>
+                        <option value="spaceBetween">Space Between</option>
+                        <option value="spaceEvenly">Space Evenly</option>
+                    </select>
+                </div>
+                <div class="flexContainer flexProp-flexStart">
+                    <div class="flexItem item1">Item 1
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Aut modi explicabo facilis?
+                        </p>
+                    </div>
+                    <div class="flexItem item2">Item 2
+                        <p>Lorem ipsum dolor sit amet, cum numquam placeat?
+                        </p>
+                    </div>
+                    <div class="flexItem item3">Item 3
+                        <p>Lorem ipsum dolor sit amet, cum numquam placeat?
+                        </p>
+                    </div>
+                    <div class="flexItem item4">Item 4
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Aut modi explicabo facilis?
+                        </p>
+                    </div>
+                    <div class="flexItem item5">Item 5
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Aut modi explicabo facilis?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>Created by codewithstupid</footer>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

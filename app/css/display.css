@@ -1,0 +1,11 @@
+.flexContainer.flexProp-flex {
+    display: flex;
+}
+
+.flexContainer.flexProp-inlineFlex {
+    display: inline-flex;
+}
+
+.flexItem {
+    width: 100px;
+}

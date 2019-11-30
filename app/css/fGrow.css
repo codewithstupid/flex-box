@@ -1,0 +1,17 @@
+.flexContainer {
+    display: flex;
+    width: 600px;
+}
+
+.flexItem {
+    width: 100px;
+    margin: 0;
+}
+
+.item1 {
+    flex-grow: 1;
+}
+
+.item2 {
+    flex-grow: 1;
+}

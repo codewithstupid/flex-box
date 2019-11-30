@@ -1,0 +1,27 @@
+.flexContainer {
+    display: flex;
+}
+
+.flexItem {
+    width: 100px;
+}
+
+.item1 {
+    order: 3
+}
+
+.item2 {
+    order: 1
+}
+
+.item3 {
+    order: 2
+}
+
+.item4 {
+    order: -1
+}
+
+.item5 {
+    order: 0
+}

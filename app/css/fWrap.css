@@ -1,0 +1,17 @@
+.flexContainer {
+    display: flex;
+    border: 1px solid #f00;
+    overflow: auto;
+}
+
+.flexContainer.flexProp-wrap {
+    flex-wrap: wrap;
+}
+
+.flexContainer.flexProp-wrapRev {
+    flex-wrap: wrap-reverse;
+}
+
+.flexContainer.flexProp-noWrap {
+    flex-wrap: nowrap;
+}

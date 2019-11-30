@@ -1,0 +1,162 @@
+CSS Flex Box (About the Container)
+
+In this article we will discuss about what is flex box and how to customize our html design using that. Before we jump in to this, I would like to break this in to 2 articles since flex box has many properties to discuss about. I will cover the container level properties in this article. I will soon upload the item level properties as a seperate article. Without further a due lets dive into this.
+
+What is Main and Cross axis
+
+In flex box, The items render directions is controled by flex direction property. if the flex direction is set to row all the items inside the container will render horizontally. In this state, the main axis is x axis and the cross axis is the vertical axis i.e Y axis. In other words width considered as main axis and the height considered as cross axis. But if you apply the flex direction as column then it will reverse. Y axis or the vertical axis is considered as a main axis and the X axis or the horzontal axis considered as the cross axis.We will discuss about the flex direction more deeply later in the article. For now we need to understand the Main and Cross axis.
+
+Flex Box will have two parts one is the container that is the wrapper element and the other one is items which are the immediate children of the container. We need to style the items using the container. Let see what are the main properties which are used in the container and the items as below.
+
+Container level CSS properties:
+
+1. display
+2. flex-direction
+3. flex-wrap
+4. flex-flow
+5. justify-content
+6. align-items
+7. align-content
+
+1. display:
+
+In CSS, display has a main role to set a element as block and inline elements based on that the width will be varied. this display property has two flex specific properties and those are flex and inline flex. From the name you know that the flex is kind of block element and the inline-flex is kind of inline element. Please refer the below screenshot.
+
+In the first screen shot you can see that the width of the container is occupied flly. but in the second screenshot, the width of the container is fixed to the elements that is present inside the container.
+
+2. flex-direction:
+
+As I already mentioned, flex direction will used to render the flow of the items based on its values. It has 4 main values and those are as below.
+
+a. row
+b. row-reverse
+c. column
+d. column-reverse
+
+	a. row:
+	
+	row is the default property of a flex box. So, whenever you apply display flex or inline flex the direction will set as row. By setting the flex-direction as row the items inside the container will render horizontally. Please refer the screenshot.
+	b. row-reverse: 
+	
+	row-reverse is same as row but the difference is the item will render from right to left instead of left to right.So, the first item will be moved to the last item and the last item will moved to the first item. Respectively the remaining items are also get changed. Please refer the below screenshot.
+	c. column:
+	
+	columns is the just opposite of row. The items will be rendered vertically instead of horizontally. Please refer the screen shot.
+	d. column-reverse:
+	
+	In this, the items are rendered from bottom to top.So the first item will be moved to the bottom and the last item will be rendered to the top and the remainning items will be moved respectively. Please refer the screenshot.
+	
+3. flex-wrap:
+
+This property is used to give the flexibility to either wrap or unwrap the items when it reaches the end of the container's main axis. It has three main properties and those are
+
+a. wrap
+b. wrap-reverse
+c. nowrap
+
+	a. wrap:
+	As name suggest, it will wrap the items so that when the items nears the container end it will wrap based on wrap direction. Please refer the screenshot for more clear understanding of what I am mentioning.
+	
+	
+	When we set the flex-direction as row then the items will try to fit in to the same row but when it reaches the end it will wrap and move to the next line.
+	
+	
+	When we set the flex-direction as column then the items will try to fit in the same column but when it reaches the end it will wrap to the next column.
+	b. wrap-reverse:
+	
+	This is same as the wrap property but the item will render in reverse order. Please refer the below screenshots
+	c. nowrap: 
+	As name implies, this value will set the items to be no wrap that is items won't get wrapped horizontally or vertically based on the direction property instead it will render with the scroll if it reaches the end of the container. Please refer the screenshot.
+	
+4. flex-flow:
+
+since flex-wrap is related to flex-direction we can use both values in a single property and that property is flex-flow. We can pass direction with wrap using the flex-flow property. The value has two parts and the first part will act as a flex-direction property and the second part will act as a flex-wrap property. Please refer the screen shots as below. Please refer the below screenshots.
+
+5. justify-content:
+
+This property will help in positioning the items if the container has a large area and the items are very less. To use the remaining area we can use this property. This property has below values.
+
+a. flex-start
+b. flex-end
+c. center
+d. space-around
+e. space-between
+f. space-evenly
+
+	a. flex-start:
+	
+	This will render all the items to the left or top based on the direction and once all the items are rendered the remaining space will be omitted. Please refer the screenshot.
+	b. flex-end:
+	
+	This will render all the items to the right or bottom based on the direction and once all the items are rendered the remaining space will be omitted. Please refer the screenshot.
+	c.center
+	
+	This will render all the items to the center vertically or horizontally based on the direction and once all the items are rendered the remaining space will be omitted. Please refer the screenshot.
+	d. space-around: 
+	
+	This will create a space between items to occupy all the spaces in the container. But before the first and after the last item has space differnce with other items space. Please refer the screenshot for more understanding.
+	e. space-between:
+	
+	This will do the same as space-around but there will be no space between before the first and after the last item. the remaining items will be spcaed equally. Please refer the screenshot.
+	f. space-evenly:
+	
+	This will give all the items an equal space so that all the items from first to last will spaced evenly. Please refer the below screenshot.
+	
+6. align-items:
+
+	This property will align the items based on its cross axis i.e if the direction is set to row or row-reverse then the item will gets aligned vertically or if the direction is set to column or column-reverse then the items will get aligned horizontally. This property has the following values.
+	
+a. flex-start
+b. flex-end
+c. center
+d. baselin
+e. stretch
+
+	a. flex-start:
+	
+	The items will get algined from the flex start point. If the direction is row then it will rendered to the top and if the direction is column then it will rederned to the left. please refer the screenshots.
+	b.  flex-end:
+	
+	The items will get algined from the flex end point. If the direction is row then it will rendered to the bottom and if the direction is column then it will rederned to the right. please refer the screenshots.
+	c. center:
+	
+	The items will get algined from the flex center point. If the direction is row then it will rendered vertically centered and if the direction is column then it will horizontally centered. please refer the screenshots.
+	d. baseline:
+	
+	Baseline is similar to the flex start. but the only difference is it will aligne the items based on the items content first line position. For example, if you have 2 items and the 2 items have 2 different padding and if we apply baseline then the items will aligned horizontally or vertically based on the items first text values. For more clear understanding please refer the below screenshot.
+	e. stretch:
+	
+	By applying this value, we are forcing the the items width or hight to stretch to the next items so that all the items will get occupied the overall container height. Please refer the below screenshot.
+	
+7. align-content:
+
+	This property will give the  ability to align the items with the distribution of space between items. The difference between align-items and align-content is that the align content will aligned with group of items inside the container while the align-item will align based on each item a first preference. This has the following values.
+	
+a. flex-start
+b. flex-end
+c. center
+d. space-between
+e. space-around
+f. stretch
+
+	a.flex-start:
+	
+	This is same as flex-start in the align-item property and the only difference is all the items together will aligned. Please refer the below screenshot.
+	b. flex-end:
+	
+	This is same as flex-end in the align-item property and the only difference is all the items together will aligned. Please refer the below screenshot.
+	c.center
+	
+	This is same as center in the align-item property and the only difference is all the items together will aligned. Please refer the below screenshot.
+	d. space-between: 
+	
+	This will give the first and last row or column with no space but all other items will share the remaining space in the container. Please refer the screenshot.
+	e. space-around:
+	
+	This will give space around all the items in the container vertically or horizontally based on the direction. Please refer the screenshot.
+	f. stretch:
+	All the items will accommadate the spaces in the container by increasing its width or height based on the direction. Please refer the screenshot.
+	
+	
+	
+These are the main properties that is availablle for container of the flex-box. In the next article I will cover all the properties that are related to the items in the container.

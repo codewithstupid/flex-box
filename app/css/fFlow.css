@@ -1,0 +1,15 @@
+.flexContainer {
+    display: flex;
+    overflow: auto;
+    flex-flow: row wrap;
+}
+
+.flexProp-width300px {
+    width: 300px;
+    height: auto;
+}
+
+.flexProp-height300px {
+    height: 300px;
+    width: auto;
+}

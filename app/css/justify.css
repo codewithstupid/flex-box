@@ -1,0 +1,31 @@
+.flexContainer {
+    display: flex;
+}
+
+.flexItem {
+    width: 100px;
+}
+
+.flexContainer.flexProp-flexStart {
+    justify-content: flex-start;
+}
+
+.flexContainer.flexProp-flexEnd {
+    justify-content: flex-end;
+}
+
+.flexContainer.flexProp-center {
+    justify-content: center;
+}
+
+.flexContainer.flexProp-spaceAround {
+    justify-content: space-around;
+}
+
+.flexContainer.flexProp-spaceEvenly {
+    justify-content: space-evenly;
+}
+
+.flexContainer.flexProp-spaceBetween {
+    justify-content: space-between;
+}

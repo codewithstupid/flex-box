@@ -1,0 +1,85 @@
+header,
+footer {
+    line-height: 40px;
+    text-align: center;
+    font-weight: 600;
+    background: #cccccc;
+    position: fixed;
+    width: 100vw;
+    height: 40px;
+}
+
+header>a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+main {
+    height: calc(100vh - 80px);
+    padding-top: 40px;
+}
+
+.exampleArea {
+    height: calc(100% - 80px);
+    overflow: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+footer {
+    bottom: 0;
+}
+
+.radioContainer {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+input[type='radio'] {
+    cursor: pointer;
+}
+
+li.menuItem,
+.menuItem>a {
+    width: 100%;
+    text-align: center;
+    line-height: 45px;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    color: #333;
+}
+
+.menuItem>a:hover {
+    background: #b6b6b6;
+    color: #ffffff;
+}
+
+.menuItem.active,
+.menuItem.active>a {
+    background: royalblue;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+
+ul.menuContainer {
+    display: flex;
+    justify-content: space-around;
+    display: none;
+}
+
+ul.menuContainer.show {
+    display: flex;
+}
+
+.flexContainer {
+    border: 1px solid #f00;
+}
+
+.flexItem {
+    border: 1px solid #333;
+    margin: 5px;
+    box-sizing: border-box;
+}
